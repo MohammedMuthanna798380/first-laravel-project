@@ -7,39 +7,6 @@ use App\Models\Computer;
 
 class ComputerControrller extends Controller
 {
-
-    //Array of computers
-    /*private static function getData (){
-        return [
-            [
-                'id' => 1,
-                'name' => 'HP',
-                'price' => 1000,
-                'description' => 'HP Laptop',
-            ],
-            [
-                'id' => 2,
-                'name' => 'Dell',
-                'price' => 1200,
-                'description' => 'Dell Laptop',
-            ],
-            [
-                'id' => 3,
-                'name' => 'Lenovo',
-                'price' => 800,
-                'description' => 'Lenovo Laptop',
-            ],
-            [
-                'id' => 4,
-                'name' => 'Asus',
-                'price' => 900,
-                'description' => 'Asus Laptop',
-            ]
-        ];
-    }*/
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
         return view('computer.index', [
@@ -80,20 +47,6 @@ class ComputerControrller extends Controller
      */
     public function show(string $id)
     {
-        // $computers = self::getData();
-        // $index = array_search($id, array_column($computers, 'id'));
-
-        // $index = Computer::find($id);
-        // $index = Computer::findOrFail($id);
-
-        // if($index === false)
-        //     abort(404);
-        // return view('computer.show', [
-        //     'computer' => $computers[$index]
-        // ]);
-        // return view('computer.show', [
-        //     'computer' => $index
-        // ]);
         return view('computer.show', [
             'computer' => Computer::findOrFail($id)
         ]);
