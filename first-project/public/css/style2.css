@@ -1,0 +1,64 @@
+/* إعدادات عامة لتنسيق الصفحة */
+.body {
+    background-color: #b3b0db;
+    display: flex;
+    margin: 16px;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+/* تنسيق العناوين */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* تنسيق عناصر النموذج */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* تنسيق الزر */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.form-error {
+    color: red;
+    font-size: 0.8rem;
+    margin: -10px 0 15px 0;
+}
